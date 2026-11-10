@@ -1,40 +1,39 @@
 
-/* ===== GENERAL DESIGN ===== */
+/* =================================
+   EXPENSE TRACKER - CUSTOM CSS
+================================= */
 
 * {
     box-sizing: border-box;
 }
 
 body {
+    margin: 0;
     background: #f1f5f9;
-    font-family: Arial, sans-serif;
     color: #1e293b;
+    font-family: Arial, sans-serif;
 }
 
-/* ===== MAIN HEADING ===== */
+/* Header */
 
-h1 {
-    color: #172554;
+header h1 {
+    color: #1e3a8a;
     font-size: 36px;
     letter-spacing: -1px;
 }
 
-h4 {
-    color: #1e293b;
-    font-weight: 700;
-}
-
-p {
+header p {
     color: #64748b;
+    font-size: 16px;
 }
 
-/* ===== CARDS ===== */
+/* Cards */
 
 .card {
+    background: #ffffff;
     border: none;
     border-radius: 16px;
-    background: #ffffff;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
     transition: transform 0.2s ease;
 }
 
@@ -46,27 +45,27 @@ p {
     padding: 25px;
 }
 
-/* ===== TOTAL EXPENSES ===== */
+/* Total Expenses */
 
 #total-expenses {
     color: #2563eb;
     font-size: 36px;
     font-weight: 800;
-    margin-top: 10px;
+    margin-top: 12px;
 }
 
-/* ===== FORM INPUTS ===== */
+/* Form */
 
 .form-label {
-    font-weight: 600;
     color: #334155;
+    font-weight: 600;
 }
 
 .form-control,
 .form-select {
+    padding: 12px;
     border: 1px solid #cbd5e1;
     border-radius: 9px;
-    padding: 12px;
 }
 
 .form-control:focus,
@@ -75,7 +74,7 @@ p {
     box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
 }
 
-/* ===== BUTTONS ===== */
+/* Add Button */
 
 .btn-primary {
     background: #2563eb;
@@ -83,19 +82,21 @@ p {
     border-radius: 9px;
     padding: 12px;
     font-weight: 700;
-    transition: 0.2s;
 }
 
 .btn-primary:hover {
     background: #1d4ed8;
 }
 
+/* Delete Button */
+
 .btn-danger {
+    border: none;
     border-radius: 7px;
     font-weight: 600;
 }
 
-/* ===== EXPENSE TABLE ===== */
+/* Table */
 
 .table {
     margin-bottom: 0;
@@ -103,7 +104,7 @@ p {
 
 .table thead th {
     background: #1e293b;
-    color: white;
+    color: #ffffff;
     padding: 14px;
     border: none;
 }
@@ -117,7 +118,20 @@ p {
     background: #eff6ff;
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
+/* Message */
+
+#message:empty {
+    display: none;
+}
+
+/* Footer */
+
+footer p {
+    color: #64748b;
+    font-size: 13px;
+}
+
+/* Mobile Responsive */
 
 @media (max-width: 576px) {
 
@@ -126,7 +140,7 @@ p {
         padding-right: 15px;
     }
 
-    h1 {
+    header h1 {
         font-size: 28px;
     }
 
